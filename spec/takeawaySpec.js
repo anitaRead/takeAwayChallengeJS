@@ -16,5 +16,11 @@ describe("Takeaway", () => {
         expect(takeaway.displayOrder()).toEqual([["Chips", 3], ["Beef Burger", 12]]);
         expect(() => { takeaway.selectDish("Bangers and Mash", 2); }).toThrow(new Error ("Dish is not available!"));
     });
+
+    it("checks the order total", () => {
+        takeaway.selectDish("Chips", 2);
+        takeaway.selectDish("Beef Burger", 2);
+        expect(takeaway.orderTotal()).toEqual(28);
+    });
     
 });
