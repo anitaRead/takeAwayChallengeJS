@@ -13,8 +13,9 @@ class Takeaway {
         for(let i=0; i<this.menu.length; i++) {
             if(this.menu[i][0] === dish) {
                 return this.order.push([dish, quantity]);
-            };
+            } 
         };
+        throw new Error ("Dish is not available!");
     };
 
     displayOrder() {
