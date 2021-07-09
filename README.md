@@ -1,5 +1,5 @@
 # Takeaway Challenge
-### using javaScript and Jasmine.
+### Test driven takeaway challenge using javaScript and Jasmine.
 
 
 ```
