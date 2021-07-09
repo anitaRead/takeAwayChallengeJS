@@ -24,7 +24,6 @@ class Takeaway {
     };
 
     orderTotal() {
-
         for(let i=0; i<this.order.length; i++) {
             for(let j=0; j<this.menu.length; j++) {
                 if(this.order[i][0] === this.menu[j][0]) {
